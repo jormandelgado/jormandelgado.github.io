@@ -1,123 +1,123 @@
-            <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jorman Delgado | Emprendimiento y Tiflotecnología Accesible</title>
-    <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f7f6; color: #333; }
-        .container { max-width: 600px; margin: auto; padding: 15px; }
-        
-        header { text-align: center; padding: 40px 20px; background: white; border-radius: 0 0 30px 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        h1 { margin: 0; color: #1a73e8; font-size: 2em; }
-        .frase-impacto { font-style: italic; color: #555; margin-top: 15px; line-height: 1.5; padding: 0 10px; }
-
-        /* SECCIÓN 1: PULPAS (Fondo: pendon fondo.jpg) */
-        .seccion-pulpa {
-            margin-top: 25px;
-            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('pendon fondo.jpg');
-            background-size: cover; background-position: center;
-            border-radius: 25px; padding: 25px; color: white; text-align: center;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-        }
-        /* Imagen Hiperrealista (Foto: pulpahiperrealista.png) */
-        .img-hiper { width: 100%; border-radius: 15px; border: 3px solid #fff; margin-bottom: 20px; }
-
-        /* SECCIÓN 2: TECNOLOGÍA (Fondo: Jormantiflotecnología.jpeg) */
-        .seccion-tecnologia {
-            margin-top: 25px;
-            background-image: linear-gradient(rgba(10, 40, 80, 0.9), rgba(10, 40, 80, 0.9)), url('Jormantiflotecnología.jpeg');
-            background-size: cover; background-position: center;
-            border-radius: 25px; padding: 25px; color: white; text-align: center;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-        }
-
-        /* Lista de Servicios Accesible (AQUÍ ESTÁ TU NUEVO SERVICIO) */
-        .lista-servicios { 
-            text-align: left; 
-            background: rgba(255,255,255,0.1); 
-            padding: 20px; 
-            border-radius: 15px; 
-            margin: 20px 0; 
-            list-style: none; 
-            border-left: 5px solid #ff5722;
-        }
-        .lista-servicios li { margin-bottom: 12px; font-size: 1.05em; line-height: 1.4; }
-
-        /* Botones Universales */
-        .btn { display: block; padding: 18px; margin: 12px 0; border-radius: 15px; text-decoration: none; font-weight: bold; font-size: 1.1em; transition: 0.3s; text-align: center; }
-        .btn-whatsapp { background-color: #25d366; color: white; }
-        .btn-calendly { background-color: #ff5722; color: white; }
-        .btn-redes { background-color: rgba(255,255,255,0.2); color: white; font-size: 0.9em; display: inline-block; padding: 10px 15px; margin: 5px; border-radius: 30px; text-decoration: none; }
-        
-        footer { text-align: center; padding: 30px; font-size: 0.8em; color: #777; }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jorman Delgado | Autonomía Digital, JorCam e Investigación Social</title>
+  <meta name="description" content="Sitio oficial de Jorman Delgado. Creador de la aplicación JorCam, estudiante e investigador de sociología en la UCV, paratleta de natación y emprendedor.">
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-<div class="container">
-    <header>
-        <h1>Jorman Delgado</h1>
-        <p class="frase-impacto">"Veo el mundo a través de la tecnología y lo disfruto con el sabor de lo natural."</p>
-    </header>
+  <!-- Enlace accesible directo para lectores de pantalla -->
+  <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
 
-    <main>
-        <section class="seccion-pulpa" aria-label="Sección de ventas de pulpas de fruta natural">
-            <img src="pulpahiperrealista.png" alt="Imagen fotorrealista de frutas frescas" class="img-hiper">
-            <h2>@llevelapulpa</h2>
-            <p>Pulpas 100% naturales para refrescar tu vida.</p>
-            
-            <a href="https://calendly.com/djormanisaac/30min" class="btn btn-calendly" aria-label="Agendar llamada de negocios sobre pulpas">
-                📅 Agendar Llamada de Negocios
-            </a>
+  <!-- Encabezado con navegación principal -->
+  <header role="banner">
+    <div class="contenedor">
+      <nav aria-label="Menú principal">
+        <a href="index.html" class="logo-sitio">Jorman Delgado</a>
+        <ul class="menu-navegacion">
+          <li><a href="herramientas.html">Herramientas & JorCam</a></li>
+          <li><a href="investigacion.html">Investigación</a></li>
+          <li><a href="pulpa.html">Lleve La Pulpa</a></li>
+          <li><a href="sala-tecnica.html">Sala Técnica</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            <a href="https://wa.me/584126303532?text=Hola%20Jorman,%20vi%20tu%20página%20y%20quiero%20pedir%20pulpas" class="btn btn-whatsapp" aria-label="Hacer pedido de pulpas por WhatsApp">
-                🛒 Pedir por WhatsApp
-            </a>
+  <!-- Contenido principal -->
+  <main id="contenido" role="main">
+    <div class="contenedor">
 
-            <div style="margin-top: 15px;">
-                <a href="https://www.tiktok.com/@llevelapulpadefrutas" class="btn-redes">TikTok</a>
-                <a href="https://www.instagram.com/llevelapulpa" class="btn-redes">Instagram</a>
-                <a href="https://www.facebook.com/llevelapulpa" class="btn-redes">Facebook</a>
-            </div>
-        </section>
+      <!-- Sección Hero / Presentación personal -->
+      <section class="hero" aria-labelledby="titulo-presentacion">
+        <img src="Jormantiflotecnolog a.jpeg" alt="Fotografía de Jorman Delgado trabajando con tecnología accesible" class="foto-perfil">
+        <div class="info-hero">
+          <h1 id="titulo-presentacion">Jorman Delgado</h1>
+          <p class="subtitulo-hero">Autonomía digital, desarrollo de software accesible e investigación social</p>
+          <p class="texto-hero">
+            Estudiante de Sociología en la Universidad Central de Venezuela (UCV), paratleta de natación venezolano y creador de contenido independiente. Desarrollo herramientas prácticas como <strong>JorCam</strong> para la grabación y producción autónoma de video sin barreras, combinando el análisis sociológico, el rigor metodológico y la disciplina deportiva.
+          </p>
+          <div class="botones-cta">
+            <a href="camara-vertical.html" class="boton boton-primario">Descargar JorCam</a>
+            <a href="https://wa.me/584120000000?text=Hola%20Jorman,%20me%20gustar%C3%ADa%20consultar%20sobre%20tus%20asesor%C3%ADas%20y%20talleres" class="boton boton-secundario" target="_blank" rel="noopener noreferrer">Solicitar Asesoría Técnica</a>
+          </div>
+        </div>
+      </section>
 
-        <section class="seccion-tecnologia" aria-label="Sección de Taller de Tiflotecnología y Creación Digital">
-            <h2 style="color: #ff5722;">Taller de Tiflotecnología</h2>
-            <p>Formación especializada en creación digital y accesibilidad.</p>
+      <!-- Cuadrícula con las páginas satélite -->
+      <section class="seccion-tarjetas" aria-labelledby="titulo-areas">
+        <h2 id="titulo-areas">Áreas de trabajo y proyectos</h2>
+        <div class="cuadricula">
 
-            <ul class="lista-servicios" aria-label="Lista completa de servicios ofrecidos en el taller">
-                <li>🌐 <strong>Desarrollo Web Accesible:</strong> Creación de páginas accesibles y optimizadas para lectores de pantalla.</li>
-                <li>📱 <strong>Tecnología Móvil:</strong> Configuración de Android 8.1+ y lectores de pantalla (Jieshuo/TalkBack).</li>
-                <li>🎬 <strong>Creación de Contenido:</strong> Edición de Reels, TikTok, YouTube, subtítulos y bots.</li>
-                <li>💰 <strong>Banca Digital:</strong> Pago Móvil, Zinli, PayPal y transferencias seguras.</li>
-                <li>⚙️ <strong>Herramientas Pro:</strong> TikFinity, OBS Studio, Studio Live y Reaper.</li>
-                <li>🧠 <strong>Inteligencia Artificial:</strong> Música, imágenes y redacción de Prompts.</li>
-                <li>📄 <strong>Ofimática:</strong> Manejo de Word, Excel y PDF con lectores de pantalla.</li>
-                <li>🎤 <strong>Asesoría Personalizada:</strong> Atención a domicilio o virtual en horario a convenir.</li>
-            </ul>
+          <!-- Tarjeta 1: JorCam y Herramientas -->
+          <article class="tarjeta">
+            <h3>JorCam & Herramientas</h3>
+            <p>Aplicación de grabación vertical accesible que sincroniza automáticamente el audio de interfaces externas (como la V8), elimina silencios y genera subtítulos sin depender de servidores de terceros.</p>
+            <a href="camara-vertical.html" class="boton boton-primario">Ver detalles y descargar JorCam</a>
+          </article>
 
-            <a href="https://calendly.com/djormanisaac/30min" class="btn btn-calendly" aria-label="Agendar llamada de asesoría técnica">
-                📅 Agendar Llamada Gratis
-            </a>
-            
-            <a href="https://wa.me/584126303532?text=Hola%20Jorman,%20me%20interesa%20inscribirme%20en%20tu%20taller" class="btn btn-whatsapp" aria-label="Consultar sobre el taller por WhatsApp">
-                💬 Consultar por WhatsApp
-            </a>
+          <!-- Tarjeta 2: Investigación Social -->
+          <article class="tarjeta">
+            <h3>Investigación Social</h3>
+            <p>Repositorio de ensayos académicos, análisis teóricos y trabajos metodológicos desarrollados durante mis estudios en la Escuela de Sociología (FACES - UCV), organizados por semestre para lectura o descarga en PDF.</p>
+            <a href="investigacion.html" class="boton boton-secundario">Explorar investigaciones</a>
+          </article>
 
-            <div style="margin-top: 15px;">
-                <a href="https://www.tiktok.com/@comolohagoentiktok" class="btn-redes">TikTok</a>
-                <a href="https://www.instagram.com/jormanstudiopro" class="btn-redes">Instagram</a>
-                <a href="https://www.youtube.com/@Comolohagojormandelgado" class="btn-redes">YouTube</a>
-            </div>
-        </section>
-    </main>
+          <!-- Tarjeta 3: Lleve La Pulpa -->
+          <article class="tarjeta">
+            <img src="pulpahiperrealista.png" alt="Presentación de pulpas de frutas naturales Lleve La Pulpa" class="imagen-tarjeta">
+            <h3>Lleve La Pulpa</h3>
+            <p>Emprendimiento artesanal de procesamiento y distribución de pulpas de frutas 100 % naturales en Caracas, ideales para repostería de alta calidad, coctelería y gastronomía.</p>
+            <a href="pulpa.html" class="boton boton-secundario">Conocer catálogo y pedidos</a>
+          </article>
 
-    <footer>
-        <p>Caracas, Venezuela | WhatsApp: +58 412-6303532</p>
-        <p>© 2026 Diseñado por Jorman Delgado - Accesibilidad para todos</p>
-    </footer>
-</div>
+          <!-- Tarjeta 4: Sala Técnica de Aprendizaje -->
+          <article class="tarjeta">
+            <h3>Sala Técnica de Aprendizaje</h3>
+            <p>Espacio exclusivo de consultoría técnica continua, resolución de dudas y talleres prácticos 1 a 1 sobre accesibilidad universal, producción digital autónoma y configuración de equipos.</p>
+            <a href="sala-tecnica.html" class="boton boton-secundario">Información de la Sala Técnica</a>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Sección de Contacto Directo y Canales Oficiales -->
+      <section id="contacto" class="seccion-tarjetas" aria-labelledby="titulo-contacto">
+        <h2 id="titulo-contacto">Conecta conmigo en redes</h2>
+        <p>Sigue mis análisis, tutoriales de tecnología accesible y reflexiones sociológicas en mis canales oficiales:</p>
+        
+        <div class="redes-sociales" aria-label="Enlaces a redes sociales oficiales">
+          <a href="https://www.tiktok.com/@soyciegoyvenezolano" class="enlace-red" target="_blank" rel="noopener noreferrer">TikTok (@soyciegoyvenezolano)</a>
+          <a href="https://www.youtube.com/@soyciegoyvenezolano" class="enlace-red" target="_blank" rel="noopener noreferrer">YouTube (@soyciegoyvenezolano)</a>
+          <a href="https://www.instagram.com/soyciegoyvenezolano" class="enlace-red" target="_blank" rel="noopener noreferrer">Instagram (@soyciegoyvenezolano)</a>
+          <a href="https://www.facebook.com/share/19bgFRPHFa/" class="enlace-red" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.linkedin.com/in/jorman-isaac-delgado-lara-4a3b67403" class="enlace-red" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/jormandelgado" class="enlace-red" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Pie de página con blindaje legal y accesibilidad -->
+  <footer role="contentinfo">
+    <div class="contenedor">
+      <p><strong>Jorman Delgado</strong> &copy; 2026. Todos los derechos reservados. Caracas, Venezuela.</p>
+      <p>Sitio web diseñado bajo estándares de accesibilidad WCAG para lectura fluida con NVDA y tecnologías de asistencia. Libre de cookies de rastreo.</p>
+      
+      <nav class="enlaces-legales" aria-label="Enlaces legales y de soporte">
+        <a href="terminos.html">Términos de uso y licencia</a>
+        <a href="privacidad.html">Política de privacidad</a>
+        <a href="reembolsos.html">Política de reembolsos</a>
+        <a href="soporte.html">Soporte y contacto</a>
+        <a href="licencias-terceros.html">Avisos de software de terceros</a>
+      </nav>
+    </div>
+  </footer>
 
 </body>
 </html>

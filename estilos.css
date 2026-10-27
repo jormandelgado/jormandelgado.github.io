@@ -1,0 +1,298 @@
+/* ==========================================================================
+   ESTILOS GENERALES Y ACCESIBILIDAD (Jorman Delgado / JorCam)
+   ========================================================================== */
+
+:root {
+  --fondo-principal: #121212;
+  --fondo-tarjeta: #1c1f26;
+  --fondo-tarjeta-hover: #242933;
+  --texto-principal: #f0f0f0;
+  --texto-secundario: #b8c0cc;
+  --acento-amarillo: #ffd400;
+  --acento-hover: #e6be00;
+  --borde: #2d3340;
+  --enfoque-teclado: #00e5ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: var(--fondo-principal);
+  color: var(--texto-principal);
+  line-height: 1.6;
+  font-size: 1.15rem;
+  padding: 0;
+  margin: 0;
+}
+
+/* Enlace invisible para saltar al contenido principal con NVDA */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 10px;
+  background: var(--acento-amarillo);
+  color: #000;
+  padding: 10px 15px;
+  z-index: 1000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.skip-link:focus {
+  top: 10px;
+  outline: 4px solid var(--enfoque-teclado);
+}
+
+/* Enfoque visible al tabular con el teclado */
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+  outline: 4px solid var(--enfoque-teclado) !important;
+  outline-offset: 3px;
+}
+
+/* Contenedor central */
+.contenedor {
+  width: 90%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Encabezado y Navegación */
+header {
+  background-color: #0a0a0c;
+  border-bottom: 2px solid var(--borde);
+  padding: 15px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo-sitio {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--texto-principal);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.menu-navegacion {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.menu-navegacion a {
+  color: var(--texto-principal);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.menu-navegacion a:hover {
+  background-color: var(--fondo-tarjeta-hover);
+  color: var(--acento-amarillo);
+}
+
+/* Sección Hero / Presentación */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding: 40px 0;
+  border-bottom: 1px solid var(--borde);
+}
+
+.foto-perfil {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--acento-amarillo);
+  flex-shrink: 0;
+}
+
+.info-hero h1 {
+  font-size: 2.3rem;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.subtitulo-hero {
+  font-size: 1.25rem;
+  color: var(--acento-amarillo);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.texto-hero {
+  color: var(--texto-secundario);
+  margin-bottom: 22px;
+}
+
+.botones-cta {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Botones universales */
+.boton {
+  display: inline-block;
+  padding: 12px 22px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  text-align: center;
+}
+
+.boton-primario {
+  background-color: var(--acento-amarillo);
+  color: #000000;
+}
+
+.boton-primario:hover {
+  background-color: var(--acento-hover);
+}
+
+.boton-secundario {
+  background-color: transparent;
+  color: var(--texto-principal);
+  border-color: var(--texto-principal);
+}
+
+.boton-secundario:hover {
+  background-color: var(--fondo-tarjeta);
+  border-color: var(--acento-amarillo);
+  color: var(--acento-amarillo);
+}
+
+/* Cuadrícula de Tarjetas */
+.seccion-tarjetas {
+  padding: 40px 0;
+}
+
+.seccion-tarjetas h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.cuadricula {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.tarjeta {
+  background-color: var(--fondo-tarjeta);
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tarjeta:hover {
+  border-color: var(--acento-amarillo);
+}
+
+.tarjeta h3 {
+  font-size: 1.35rem;
+  margin-bottom: 10px;
+  color: var(--acento-amarillo);
+}
+
+.tarjeta p {
+  color: var(--texto-secundario);
+  font-size: 1rem;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.imagen-tarjeta {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid var(--borde);
+}
+
+/* Enlaces y botones de redes */
+.redes-sociales {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.enlace-red {
+  background-color: var(--fondo-tarjeta);
+  color: var(--texto-principal);
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid var(--borde);
+}
+
+.enlace-red:hover {
+  background-color: var(--acento-amarillo);
+  color: #000;
+}
+
+/* Pie de página */
+footer {
+  background-color: #0a0a0c;
+  border-top: 1px solid var(--borde);
+  padding: 30px 0;
+  margin-top: 40px;
+  font-size: 0.95rem;
+  color: var(--texto-secundario);
+}
+
+.enlaces-legales {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 15px 0 10px;
+}
+
+.enlaces-legales a {
+  color: var(--texto-secundario);
+  text-decoration: underline;
+}
+
+.enlaces-legales a:hover {
+  color: var(--acento-amarillo);
+}
+
+/* Adaptación móvil */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .botones-cta {
+    justify-content: center;
+  }
+}
